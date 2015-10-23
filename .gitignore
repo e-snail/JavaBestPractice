@@ -1,0 +1,25 @@
+# Built application files
+
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+out/
+.idea/
+.navigation/
+
+# IDEA Ignores
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Log Files
+*.log
+
+#mac
+.DS_Store
+

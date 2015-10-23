@@ -1,10 +1,11 @@
-package wilburwu.javapractice;
+package bestpractice.cache;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
  * Created by wuyongbo on 2015/8/5.
+ *
  * 最近最少使用的cache设计，主要解决几个问题：
  * 1，查询最晚使用的项
  * 2，给最近使用的项做标记
@@ -151,7 +152,7 @@ public class LruCache<K, V> {
             V value;
             synchronized (this) {
                 if (size < 0 || (map.isEmpty() && size != 0)) {
-                  throw new IllegalStateException(".sizeOf is reporting inconsistent results!");
+                    throw new IllegalStateException(".sizeOf is reporting inconsistent results!");
                 }
 
                 if (size <= maxSize) {
