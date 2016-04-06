@@ -1,4 +1,4 @@
-package bestpractice.algorithm;
+package java.bestpractice.algorithm;
 
 import java.util.ArrayDeque;
 
@@ -14,9 +14,9 @@ public class BinaryTreeTraverse {
     }
 
     /**
-     * ¸ù¾İÖĞĞò±éÀúµÄÊä³öĞòÁĞ´´½¨Ò»¿Å¶ş²æÊ÷
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ´ï¿½ï¿½ï¿½Ò»ï¿½Å¶ï¿½ï¿½ï¿½ï¿½ï¿½
      * @param array
-     * @return ·µ»Ø¸ù½Úµã
+     * @return ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½Úµï¿½
      */
     private BinaryTreeNode makeBinaryTreeMiddleOrder(int array[], int index) {
         if (index < array.length) {
@@ -35,8 +35,8 @@ public class BinaryTreeTraverse {
     }
 
     /**
-     * Éî¶ÈÓÅÏÈ±éÀúµÄµİ¹éËã·¨ÊµÏÖ
-     * ¸¨ÖúÊı¾İ½á¹¹ Õ»
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È±ï¿½ï¿½ï¿½ï¿½Äµİ¹ï¿½ï¿½ã·¨Êµï¿½ï¿½
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ½á¹¹ Õ»
      * @param treeNode
      */
     private void deepFirstTraverseRecursive(BinaryTreeNode treeNode) {
@@ -57,9 +57,9 @@ public class BinaryTreeTraverse {
     }
 
     /**
-     * Éî¶ÈÓÅÏÈ±éÀúµÄ·Çµİ¹éËã·¨ÊµÏÖ
-     * ¸¨ÖúÊı¾İ½á¹¹ Õ»
-     * @param rootNode ¶ş²æÊ÷µÄ¸ù½Úµã
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È±ï¿½ï¿½ï¿½ï¿½Ä·Çµİ¹ï¿½ï¿½ã·¨Êµï¿½ï¿½
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ½á¹¹ Õ»
+     * @param rootNode ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½Úµï¿½
      */
     ArrayDeque<BinaryTreeNode> stack = new ArrayDeque<BinaryTreeNode>();
     private void deepFirstTraverseNonRecursive(BinaryTreeNode rootNode) {
@@ -84,8 +84,8 @@ public class BinaryTreeTraverse {
     }
 
     /**
-     * ¹ã¶È±éÀúµÄ·Çµİ¹éÊµÏÖ£¬ÌåÏÖÁË¶ÓÁĞÏÈ½øÏÈ³öµÄÌØµã
-     * ¸¨ÖúÊı¾İ½á¹¹ ¶ÓÁĞ
+     * ï¿½ï¿½È±ï¿½ï¿½ï¿½ï¿½Ä·Çµİ¹ï¿½Êµï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½ï¿½ï¿½ï¿½È½ï¿½ï¿½È³ï¿½ï¿½ï¿½ï¿½Øµï¿½
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ½á¹¹ ï¿½ï¿½ï¿½ï¿½
      * @param node
      */
     private void widthFirstTraverse(BinaryTreeNode node) {
@@ -113,11 +113,11 @@ public class BinaryTreeTraverse {
     public static void main(String[] args) {
         int[] arr={0,13,65,5,97,25,0,37,22,0,4,28,0,0,32,0};
         BinaryTreeTraverse treeTraverse = new BinaryTreeTraverse(arr);
-        System.out.print("\n------Éî¶ÈÓÅÏÈ±éÀú µİ¹éËã·¨------\n");
+        System.out.print("\n------ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È±ï¿½ï¿½ï¿½ ï¿½İ¹ï¿½ï¿½ã·¨------\n");
         treeTraverse.deepFirstTraverseRecursive(treeTraverse.rootNode);
-        System.out.print("\n------Éî¶ÈÓÅÏÈ±éÀú ·Çµİ¹éËã·¨------\n");
+        System.out.print("\n------ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È±ï¿½ï¿½ï¿½ ï¿½Çµİ¹ï¿½ï¿½ã·¨------\n");
         treeTraverse.deepFirstTraverseNonRecursive(treeTraverse.rootNode);
-        System.out.print("\n------¹ã¶ÈÓÅÏÈ±éÀú------\n");
+        System.out.print("\n------ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È±ï¿½ï¿½ï¿½------\n");
         treeTraverse.widthFirstTraverse(treeTraverse.rootNode);
     }
 }

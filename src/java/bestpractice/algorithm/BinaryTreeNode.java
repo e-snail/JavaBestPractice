@@ -1,4 +1,4 @@
-package bestpractice.algorithm;
+package java.bestpractice.algorithm;
 
 /**
  * Created by wuyongbo on 2015/10/23.
